@@ -66,12 +66,6 @@ module.exports = {
     ],
     "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": ["error"],
-    "no-confusing-arrow": [
-      "error",
-      {
-        allowParens: true,
-      },
-    ],
     "no-useless-computed-key": ["error"],
     "no-useless-rename": ["error"],
     "object-shorthand": ["error", "always"],
@@ -94,12 +88,7 @@ module.exports = {
     "no-throw-literal": "error",
     "no-with": "error",
     "prefer-promise-reject-errors": "error",
-    "no-unused-vars": [
-      "error",
-      {
-        args: "none",
-      },
-    ],
+    "no-unused-vars": "warn",
     "array-bracket-newline": "off",
     "array-bracket-spacing": ["error", "never"],
     "array-element-newline": "off",
