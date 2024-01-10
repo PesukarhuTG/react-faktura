@@ -1,8 +1,12 @@
-# React + Vite
+# Online store Koff (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Description /...in process of development/
 
-Currently, two official plugins are available:
+Using technologies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite](https://vitejs.dev/)
+- React (functional components...)
+- HTML, SCSS
+- destructurization, ES6+ syntax
+- extra libraries:
+  - [classnames](https://www.npmjs.com/package/classnames);
