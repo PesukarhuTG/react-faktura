@@ -1,5 +1,7 @@
 # Online store Koff (React + Vite)
 
+<h2 align="center"><a href="https://react-faktura.vercel.app/" target="_blank">Deploy link</a></h2>
+
 ### Description /...in process of development/
 
 Using technologies:
