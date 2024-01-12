@@ -56,9 +56,6 @@ html *::-webkit-scrollbar-thumb {
 }
 
 body {
-  display: flex; /*fix footer to bottom*/
-  flex-direction: column; /*fix footer to bottom*/
-
   position: relative;
   overflow-x: hidden;
   min-width: 320px;
@@ -75,6 +72,13 @@ body {
   line-height: 1.2;
   color: #1c1c1c;
   background-color: #fff;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 main {

@@ -1,7 +1,8 @@
 import Container from "../Container/Container";
+import style from "./Main.module.scss";
 
 const Main = () => (
-  <main>
+  <main className={style.main}>
     <Container></Container>
   </main>
 );

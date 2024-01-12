@@ -1,0 +1,50 @@
+.link {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 4px;
+
+  border-radius: 4px;
+  outline-offset: 4px;
+  outline: 1px solid transparent;
+  transition: 0.3s all;
+
+  svg {
+    fill: #fff;
+  }
+
+  &:hover,
+  &:active {
+    color: #780096;
+
+    svg {
+      fill: #780096;
+      transition: 0.2s ease-in fill;
+    }
+  }
+
+  &:focus-visible {
+    color: #780096;
+    outline-color: #780096;
+  }
+
+  &:active {
+    color: #cc00ff;
+
+    svg {
+      fill: #cc00ff;
+    }
+  }
+
+  @media (min-width: 580px) {
+    flex-direction: row;
+  }
+}
+
+.linkText {
+  display: none;
+
+  @media (min-width: 580px) {
+    display: block;
+  }
+}

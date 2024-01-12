@@ -1,0 +1,32 @@
+.contacts {
+  display: grid;
+  gap: 24px;
+
+  @media (min-width: 580px) {
+    grid-column: 2/3;
+    justify-self: end;
+  }
+}
+
+.phone {
+  display: flex;
+  gap: 4px;
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+}
+
+.link {
+  transition: 0.3s all;
+  outline: 0;
+
+  &:focus-visible {
+    color: #780096;
+  }
+
+  &:hover {
+    color: #780096;
+  }
+}

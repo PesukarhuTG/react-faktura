@@ -1,0 +1,28 @@
+.list {
+  @media (min-width: 580px) {
+    grid-column: 1/2;
+  }
+}
+
+.item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.link {
+  transition: 0.3s all;
+  border-radius: 4px;
+  outline-offset: 2px;
+  outline: 1px solid transparent;
+
+  &:focus-visible {
+    outline-color: #fff;
+  }
+
+  &:hover {
+    color: #780096;
+  }
+}

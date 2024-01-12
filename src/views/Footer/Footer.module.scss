@@ -1,0 +1,44 @@
+.footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 32px 0 40px;
+
+  @media (min-width: 820px) {
+    padding-top: 40px;
+  }
+}
+
+.container {
+  display: grid;
+  gap: 24px;
+
+  @media (min-width: 580px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 820px) {
+    gap: 32px;
+  }
+}
+
+.linkLogo {
+  border-radius: 4px;
+  outline-offset: 4px;
+  outline: 1px solid transparent;
+
+  &:focus-visible {
+    outline-color: #fff;
+  }
+}
+
+.logo {
+  width: 230px;
+
+  @media (min-width: 580px) {
+    grid-column: 1/2;
+  }
+
+  @media (min-width: 820px) {
+    width: 330px;
+  }
+}
