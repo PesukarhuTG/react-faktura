@@ -8,7 +8,7 @@ const Header = () => (
   <header className={style.header}>
     <Container className={style.container}>
       <Logo className={style.logo} />
-      <SearchForm className={style.search} />
+      <SearchForm />
       <Navigation className={style.navigation} />
     </Container>
   </header>

@@ -1,8 +1,8 @@
 import SearchSVG from "/src/assets/icons/icon-search.svg?react";
 import style from "./SearchForm.module.scss";
 
-const SearchForm = (props) => (
-  <form className={props.className}>
+const SearchForm = () => (
+  <form className={style.search}>
     <input
       className={style.input}
       type="search"
