@@ -7,7 +7,7 @@ import style from "./Header.module.scss";
 const Header = () => (
   <header className={style.header}>
     <Container className={style.container}>
-      <Logo className={style.logo} />
+      <Logo className={style.linkLogoHeader} />
       <SearchForm />
       <Navigation />
     </Container>

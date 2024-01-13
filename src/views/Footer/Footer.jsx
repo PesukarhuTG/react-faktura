@@ -8,7 +8,7 @@ import style from "./Footer.module.scss";
 const Footer = () => (
   <footer className={style.footer}>
     <Container className={style.container}>
-      <Logo className={style.linkLogo} />
+      <Logo className={style.linkLogoFooter} />
       <Contacts />
       <Developers />
       <Copyrights />
