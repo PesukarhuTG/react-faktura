@@ -25,14 +25,11 @@
   border-radius: 4px;
   outline-offset: 4px;
   outline: 1px solid transparent;
+  width: 230px;
 
   &:focus-visible {
     outline-color: #fff;
   }
-}
-
-.logo {
-  width: 230px;
 
   @media (min-width: 580px) {
     grid-column: 1/2;
