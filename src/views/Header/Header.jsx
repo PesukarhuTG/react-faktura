@@ -9,7 +9,7 @@ const Header = () => (
     <Container className={style.container}>
       <Logo className={style.logo} />
       <SearchForm />
-      <Navigation className={style.navigation} />
+      <Navigation />
     </Container>
   </header>
 );

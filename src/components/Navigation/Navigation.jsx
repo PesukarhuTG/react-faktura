@@ -2,8 +2,8 @@ import FavouriteSVG from "/src/assets/icons/icon-favourite.svg?react";
 import CartSVG from "/src/assets/icons/icon-cart.svg?react";
 import style from "./Navigation.module.scss";
 
-const Navigation = (props) => (
-  <nav className={props.className}>
+const Navigation = () => (
+  <nav className={style.navigation}>
     <a href="/favourite" className={style.link}>
       <span className={style.linkText}>Избранное</span>
       <FavouriteSVG />
