@@ -1,0 +1,142 @@
+.card {
+  position: relative;
+  height: 100%; /*равнение карточки по высоте*/
+  display: flex; /*равнение карточки по высоте*/
+  flex-direction: column; /*равнение карточки по высоте*/
+}
+
+.linkImg {
+  display: block;
+  margin-bottom: 12px;
+
+  border-radius: 4px;
+  outline: 1px solid transparent;
+  transition: 0.3s all;
+
+  &:focus-visible {
+    outline-color: #cc00ff;
+  }
+
+  @media (min-width: 580px) {
+    margin-bottom: 16px;
+  }
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  aspect-ratio: 7/6;
+
+  @media (min-width: 580px) {
+    aspect-ratio: 23/20;
+  }
+
+  @media (min-width: 820px) {
+    aspect-ratio: 151/125;
+  }
+}
+
+.info {
+  flex-grow: 1; /*равнение карточки по высоте*/
+
+  @media (min-width: 580px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 400;
+
+  @media (min-width: 580px) {
+    padding-top: 3px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
+
+.price {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 16px;
+
+  @media (min-width: 580px) {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 32px;
+  color: #780096;
+  border: 1px solid #780096;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.3s all;
+
+  &:hover {
+    color: #fff;
+    background-color: #9200b7;
+    border-color: #9200b7;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #cc00ff;
+    border-color: #cc00ff;
+  }
+
+  &:focus-visible {
+    color: #cc00ff;
+    border-color: #cc00ff;
+    background-color: transparent;
+  }
+}
+
+.favourite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  border-radius: 4px;
+  outline-offset: 4px;
+  outline: 1px solid transparent;
+  transition: 0.3s all;
+
+  svg {
+    fill: #fff;
+  }
+
+  &:hover,
+  &_active {
+    color: #780096;
+
+    svg {
+      fill: #780096;
+      transition: 0.2s ease-in fill;
+    }
+  }
+
+  &:focus-visible {
+    color: #780096;
+    outline-color: #780096;
+  }
+
+  &:active {
+    color: #cc00ff;
+
+    svg {
+      fill: #cc00ff;
+    }
+  }
+}
