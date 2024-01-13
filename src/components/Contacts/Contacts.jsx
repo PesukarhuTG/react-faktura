@@ -14,19 +14,22 @@ const Contacts = () => (
 
     <ul className={style.list}>
       <li>
-        <a className={style.link} href="#">
+        <a className={style.link} href="#" aria-label="ссылка на группу в ВК">
           <VkontakteSVG />
         </a>
       </li>
 
       <li>
-        <a className={style.link} href="#">
+        <a className={style.link} href="#" aria-label="ссылка на YouTube канал">
           <YoutubeSVG />
         </a>
       </li>
 
       <li>
-        <a className={style.link} href="#">
+        <a
+          className={style.link}
+          href="#"
+          aria-label="ссылка на чат в Телеграмм">
           <TelegramSVG />
         </a>
       </li>
