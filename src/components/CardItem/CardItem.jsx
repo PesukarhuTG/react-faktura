@@ -1,27 +1,24 @@
 import FavouriteSVG from "/src/assets/icons/icon-favourite.svg?react";
 import style from "./CardItem.module.scss";
+import { API_URL } from "../../const";
 
-const CardItem = () => (
+const CardItem = ({ id, name, images, price }) => (
   <article className={style.card}>
-    <a className={style.linkImg} href="#">
-      <img
-        className={style.image}
-        src="https://www.mebelbspb.ru/images/tovar/cover4296.jpg"
-        alt="image"
-      />
+    <a className={style.linkImg} href={`/product/${id}`}>
+      <img className={style.image} src={`${API_URL}/${images[0]}`} alt={name} />
     </a>
     <div className={style.info}>
       <h3 className={style.title}>
-        <a href="#" tabIndex="-1">
-          Диван Норд
+        <a href={`/product/${id}`} tabIndex="-1">
+          {name}
         </a>
       </h3>
-      <span className={style.price}>80 640 ₽</span>
+      <span className={style.price}>{`${price.toLocaleString()} ₽`}</span>
     </div>
-    <button className={style.btn} type="button">
+    <button className={style.btn} data-id={id} type="button">
       В корзину
     </button>
-    <button className={style.favourite} type="button">
+    <button className={style.favourite} data-id={id} type="button">
       <FavouriteSVG />
     </button>
   </article>
