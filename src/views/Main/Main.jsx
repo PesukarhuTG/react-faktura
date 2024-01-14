@@ -34,10 +34,8 @@ const Main = () => {
 
   return (
     <main className={style.main}>
-      <Container>
-        <Catalog data={dataCategories} />
-        <Goods data={dataGoods} />
-      </Container>
+      <Catalog data={dataCategories} />
+      <Goods data={dataGoods} />
     </main>
   );
 };
