@@ -1,16 +1,17 @@
 import Container from "../../views/Container/Container";
 import style from "./Catalog.module.scss";
 
-const Catalog = () => (
-  /* GET CATALOG LIST */
+const Catalog = ({ data }) => (
   <nav className={style.catalog}>
     <Container className={style.container}>
       <ul className={style.list}>
-        <li>
-          <a className={style.link} href="/catalog?slug=Диваны">
-            Диваны
-          </a>
-        </li>
+        {data?.map((item, i) => (
+          <li key={i}>
+            <a className={style.link} href={`/category?slug=${item}`}>
+              {item}
+            </a>
+          </li>
+        ))}
       </ul>
     </Container>
   </nav>
