@@ -18,7 +18,11 @@ const CardItem = ({ id, name, images, price }) => (
     <button className={style.btn} data-id={id} type="button">
       В корзину
     </button>
-    <button className={style.favourite} data-id={id} type="button">
+    <button
+      className={style.favourite}
+      data-id={id}
+      type="button"
+      aria-label="добавление в избранное">
       <FavouriteSVG />
     </button>
   </article>
