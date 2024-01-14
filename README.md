@@ -8,6 +8,7 @@ Using technologies:
 
 - [Vite](https://vitejs.dev/)
 - React (functional components...)
+- [Redux / RTK](https://redux.js.org/introduction/installation)
 - HTML, SCSS
 - destructurization, ES6+ syntax
 - extra libraries:
