@@ -10,12 +10,16 @@ import { fetchGoods } from "../../store/goods/goodsSlice";
 
 const Main = () => {
   const dispatch = useDispatch();
-  const { data: dataCategories, loading: loadingCategories } = useSelector(
-    (state) => state.categories,
-  );
-  const { data: dataGoods, loading: loadingGoods } = useSelector(
-    (state) => state.goods,
-  );
+  const {
+    data: dataCategories,
+    loading: loadingCategories,
+    error: errorCategories,
+  } = useSelector((state) => state.categories);
+  const {
+    data: dataGoods,
+    loading: loadingGoods,
+    error: errorGoods,
+  } = useSelector((state) => state.goods);
 
   useEffect(() => {
     dispatch(fetchCategories());
@@ -23,7 +27,10 @@ const Main = () => {
   }, [dispatch]);
 
   if (loadingCategories) return <div>Загрузка...</div>;
+  if (errorCategories) return <div>Ошибка: {errorCategories}</div>;
+
   if (loadingGoods) return <div>Загрузка...</div>;
+  if (errorGoods) return <div>Ошибка: {errorGoods}</div>;
 
   return (
     <main className={style.main}>

@@ -13,7 +13,7 @@ const CardItem = ({ id, name, images, price }) => (
           {name}
         </a>
       </h3>
-      <span className={style.price}>{`${price.toLocaleString()} ₽`}</span>
+      <span className={style.price}>{`${price.toLocaleString()}\u00A0₽`}</span>
     </div>
     <button className={style.btn} data-id={id} type="button">
       В корзину
