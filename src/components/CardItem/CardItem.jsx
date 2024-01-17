@@ -1,17 +1,18 @@
 import FavouriteSVG from "/src/assets/icons/icon-favourite.svg?react";
 import style from "./CardItem.module.scss";
 import { API_URL } from "../../const";
+import { Link } from "react-router-dom";
 
 const CardItem = ({ id, name, images: [image], price }) => (
   <article className={style.card}>
-    <a className={style.linkImg} href={`/product/${id}`}>
+    <Link className={style.linkImg} to={`/product/${id}`}>
       <img className={style.image} src={`${API_URL}/${image}`} alt={name} />
-    </a>
+    </Link>
     <div className={style.info}>
       <h3 className={style.title}>
-        <a href={`/product/${id}`} tabIndex="-1">
+        <Link to={`/product/${id}`} tabIndex="-1">
           {name}
-        </a>
+        </Link>
       </h3>
       <span className={style.price}>{price.toLocaleString()}&nbsp;₽</span>
     </div>

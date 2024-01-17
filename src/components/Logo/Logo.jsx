@@ -1,24 +1,25 @@
 import logo from "/src/assets/store-logo.svg";
 import cn from "classnames";
 import style from "./Logo.module.scss";
+import { Link } from "react-router-dom";
 
 const Logo = (props) =>
   props.className ? (
-    <a className={cn(props.className, style.linkLogoCommon)} href="/">
+    <Link className={cn(props.className, style.linkLogoCommon)} to="/">
       <img
         className={style.img}
         src={logo}
         alt="Логотип магазина мебели Фактура"
       />
-    </a>
+    </Link>
   ) : (
-    <a href="/" className={style.linkLogoCommon}>
+    <Link to="/" className={style.linkLogoCommon}>
       <img
         className={style.img}
         src={logo}
         alt="Логотип магазина мебели Фактура"
       />
-    </a>
+    </Link>
   );
 
 export default Logo;

@@ -9,6 +9,7 @@ Using technologies:
 - [Vite](https://vitejs.dev/)
 - React (functional components...)
 - [Redux / RTK](https://redux.js.org/introduction/installation) (Store, Slices, Reducers, createAsyncThunk, extraReducers / hooks: useDispatch, useSelector)
+- [Routing](https://reactrouter.com/en/main) (Route, RouterProvider, NavLink, Outlet, createBrowserRouter, createRoutesFromElements)
 - HTML, SCSS
 - destructurization, ES6+ syntax
 - extra libraries:
