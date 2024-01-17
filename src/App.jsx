@@ -10,6 +10,8 @@ const App = () => {
   const dispatch = useDispatch();
   const { accessToken, loading } = useSelector((state) => state.auth);
 
+  console.log("В токене сейчас: ", accessToken);
+
   useEffect(() => {
     if (!accessToken) {
       dispatch(fetchAccessToken());

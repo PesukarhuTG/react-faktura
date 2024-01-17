@@ -2,10 +2,10 @@ import FavouriteSVG from "/src/assets/icons/icon-favourite.svg?react";
 import style from "./CardItem.module.scss";
 import { API_URL } from "../../const";
 
-const CardItem = ({ id, name, images, price }) => (
+const CardItem = ({ id, name, images: [image], price }) => (
   <article className={style.card}>
     <a className={style.linkImg} href={`/product/${id}`}>
-      <img className={style.image} src={`${API_URL}/${images[0]}`} alt={name} />
+      <img className={style.image} src={`${API_URL}/${image}`} alt={name} />
     </a>
     <div className={style.info}>
       <h3 className={style.title}>
@@ -13,7 +13,7 @@ const CardItem = ({ id, name, images, price }) => (
           {name}
         </a>
       </h3>
-      <span className={style.price}>{`${price.toLocaleString()}\u00A0₽`}</span>
+      <span className={style.price}>{price.toLocaleString()}&nbsp;₽</span>
     </div>
     <button className={style.btn} data-id={id} type="button">
       В корзину
